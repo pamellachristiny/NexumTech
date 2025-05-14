@@ -1,0 +1,132 @@
+
+*,a,ul{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    /* Cada rem = 10px */
+}
+
+
+header{
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+header h1{
+    font-size:3.1rem;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+header nav ul li a{
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #0000ff;
+    color: #fff;
+    
+    width: 200px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+
+}
+
+
+main{
+    width: 90%;
+    height: 100vh;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+#sobre{
+    background-color: #5353bc90;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#sobre h2{
+    padding: 10px 0;
+}
+
+#sobre img{
+    max-width: 25vw;
+    float: right;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+#sobre p{
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+@media (min-width:768px) {
+    body{
+        background-color: #f9e176;
+    }
+} 
+
+@media (max-width:768px) {
+    body{
+        background-color: #9be89c;
+    }
+} 
+
+@media (max-width:600px) and (min-width:500px) {
+    body{
+        background-color: #eaaddf;
+    }
+}
+
+
+@media (min-width:1024px) {
+    
+    header nav ul{
+        flex-direction: row;
+    }
+
+    header nav ul li a{
+        width: 24rem;
+        height: 6.5rem;
+        font-size: 2.6rem;
+    }
+
+    main{
+        width: 95%;
+    }
+
+    #sobre h2{
+        font-size: 2.5rem;
+    }
+    #sobre p{
+        font-size: 2rem;
+    }
+
+}
+
+
+/*
+    Crie um breakpoint em 1024px onde o cabeçalho fique em linha e alinhado ao conteúdo da página, ele tem que ficar proporcional também!
+
+*/
